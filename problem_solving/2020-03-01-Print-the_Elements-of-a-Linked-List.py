@@ -94,6 +94,7 @@ if __name__ == '__main__':
 
     llist = SinglyLinkedList()
 
+    # for loop를 통해서 테스트 케이스 값들을 하나씩 연결 리스트에 넣어주는 일을 진행한다.
     for _ in range(llist_count):
         llist_item = int(input())
         llist.insert_node(llist_item)

@@ -65,6 +65,7 @@ import sys
 
 
 def getTotalX(a, b):
+    # 최대, 최소 공약수 문제를 다루는데, 코드적으로 이해를 못했으니 원...
     nmax, nmin, count = max(a), min(b), 0
     for i in range(1, int(nmin/nmax)+1):
         if(sum((i*nmax) % n for n in a)+sum(n % (i*nmax) for n in b)) == 0:

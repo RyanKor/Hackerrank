@@ -41,6 +41,9 @@ python students = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti'
 The lowest grade of  belongs to Tina. The second lowest grade of  belongs to both Harry and Berry, so we order their names alphabetically and print each name on a new line.
 """
 
+# 파이썬을 좀 더 파이썬스럽게 사용해야한다.
+#
+
 if __name__ == '__main__':
     a= []
     for _ in range(int(input())):

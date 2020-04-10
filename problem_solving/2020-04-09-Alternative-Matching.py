@@ -15,8 +15,8 @@ The rest of the string must contain only one or more English alphabetic letters 
 Note: This is a RegEx-only challenge. You are not required to write code; you simply need to fill in the blank.
 """
 
-Regex_Pattern = r'^(Mr?s|[MDE]r)\.[a-zA-Z]+$'	# Do not delete 'r'.
-
 import re
+Regex_Pattern = r'^(Mr?s|[MDE]r)\.[a-zA-Z]+$'  # Do not delete 'r'.
+
 
 print(str(bool(re.search(Regex_Pattern, input()))).lower())

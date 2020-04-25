@@ -56,6 +56,7 @@ for _ in range(n):
     tags = pattern.findall(fragment)  # 패턴 객체는 다른 정규표현식 메소드를 다시 사용 가능함
     if tags:
         tag_names.update(tags)
+# sep = 의 경우, 각 배열들을 지정한 문자열로 구분해서 표기하겠다는 뜻이다.
 print(*sorted(tag_names), sep=';')
 # *이 sorted앞에 붙지 않으면 해당 자료형이 출력됨
 # *이 sorted앞에 붙으면 자료형의 요소들이 모두 반환

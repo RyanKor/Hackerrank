@@ -33,3 +33,9 @@ Sample Output
 
 5
 """
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+case = input()
+
+eval(case)

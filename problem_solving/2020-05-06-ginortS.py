@@ -34,6 +34,9 @@ ginortS1324
 # 3.
 # 마지막으로 문자가 반드시 앞에 오고 숫자는 뒤에 오되, 숫자는 대문자 뒤에 붙어야한다는 점
 # 이런 내용들을 뽑아볼 수 있겠다.
+
+# 4가지 풀이법
+
 # print(*sorted(input(), key=lambda c: (-ord(c) >> 5, c in '02468', c)), sep='')
 
 # print(*sorted(input(), key=lambda c: (c.isdigit() - c.islower(), c in '02468', c)), sep='')

@@ -85,14 +85,24 @@ def print_singly_linked_list(node, sep, fptr):
 
 def insertNodeAtTail(head, data):
 
+    # recursion을 사용하면, runtime error가 무조건 발생할 수 밖에 없음
+    # if head == None:
+    #     head =  SinglyLinkedListNode(data)
+    #     return head
+    # else:
+    #     head.next = insertNodeAtTail(head.next,data)
+    #     return head
+
+    # recursion이 아닌 loop를 통해 값을 산출하는 방법
     if head == None:
-        return SinglyLinkedListNode(data)
-    else:
-        if head.next == None:
-            head.next = SinglyLinkedListNode(data)
-        else:
-            insertNodeAtTail(head.next, data)
+        head = SinglyLinkedListNode(data)
         return head
+    else:
+        current = head
+        while current.next:
+            current = current.next
+        current.next = SinglyLinkedListNode(data)
+    return head
 
 
 if __name__ == '__main__':
